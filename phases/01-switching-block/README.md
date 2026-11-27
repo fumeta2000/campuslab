@@ -121,7 +121,7 @@ Each decision below is a small hardening step. Together they are the baseline th
 | Test | Destination | Result |
 |---|---|---|
 | Same VLAN | PC-A-DATOS2 10.1.100.11 | ✅ |
-| Inter-VLAN | SRV-CPD01 10.1.200.10 | ✅ `tracert` shows 1 hop (the gateway), TTL 128 → 127 |
+| Inter-VLAN | SRV-CPD01 10.1.200.10 | ✅ `tracert`: the gateway 10.1.100.254 is the only hop before the server; `ping` shows TTL 127 (128 − 1 router) |
 | Inter-VLAN | IMP-A-01 10.1.140.10 | ✅ |
 | Management | 10.1.99.11 / .12 / .13 | ✅ |
 
@@ -188,11 +188,11 @@ This phase is a functional, hardened baseline, **not** a secure network yet. Kno
 
 | File | Content |
 |---|---|
-| [`configs/A-DI01.txt`](configs/A-DI01.txt) | Distribution switch 1 |
-| [`configs/A-DI02.txt`](configs/A-DI02.txt) | Distribution switch 2 |
-| [`configs/A-AC01.txt`](configs/A-AC01.txt) | Access switch 1 |
-| [`configs/A-AC02.txt`](configs/A-AC02.txt) | Access switch 2 |
-| [`configs/CPD-TOR01.txt`](configs/CPD-TOR01.txt) | Data-center ToR switch |
+| [`configs/A-DI01_running-config.txt`](configs/A-DI01_running-config.txt) | Distribution switch 1 |
+| [`configs/A-DI02_running-config.txt`](configs/A-DI02_running-config.txt) | Distribution switch 2 |
+| [`configs/A-AC01_running-config.txt`](configs/A-AC01_running-config.txt) | Access switch 1 |
+| [`configs/A-AC02_running-config.txt`](configs/A-AC02_running-config.txt) | Access switch 2 |
+| [`configs/CPD-TOR01_running-config.txt`](configs/CPD-TOR01_running-config.txt) | Data-center ToR switch |
 | `campuslab-phase1.pkt` | Packet Tracer file |
 
 ## 9. Concepts reviewed in this phase
