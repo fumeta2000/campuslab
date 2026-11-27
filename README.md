@@ -24,7 +24,7 @@ Every phase includes the Packet Tracer / GNS3 files, the device configurations, 
 
 | Phase | Topic | Key technologies | Status |
 |---|---|---|---|
-| 1 | [Switching Block](phases/01-switching-block/) | VLANs, 802.1Q trunks, port security, addressing plan | 🔄 In progress |
+| 1 | [Switching Block](phases/01-switching-block/) | VLANs, 802.1Q trunks, port security, addressing plan | ✅ Done |
 | 2 | [High availability & load sharing](phases/02-high-availability/) | HSRP (+preempt), redundant DHCP, PVST+, EtherChannel (LACP), collapsed core | ⏳ Planned |
 | 3 | [IPv6 dual-stack](phases/03-ipv6-dual-stack/) | Hierarchical IPv6 plan, SLAAC/EUI-64, IPv6 routing | ⏳ Planned |
 | 4 | [VoIP with QoS](phases/04-voip-qos/) | FreePBX, voice VLAN, CoS/QoS, jitter / loss / MOS measurement | ⏳ Planned |
